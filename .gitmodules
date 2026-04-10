@@ -1,0 +1,4 @@
+[submodule "3rd_party/robomimic"]
+	path = 3rd_party/robomimic
+	url = https://github.com/openverse-orca/robomimic.git
+

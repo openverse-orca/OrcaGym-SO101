@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 模型权重（体积大，不进 git，见 models/ 目录下的 README）
+models/**/*.bin
+models/**/*.safetensors
+models/**/*.ckpt
+models/**/*.pt
+models/**/*.pth
+models/**/params/
+!models/**/README.md
+
+# 场景资产（不进 git，见 assets/ 目录下的 README）
+assets/**/*.stl
+assets/**/*.obj
+assets/**/*.dae
+assets/**/*.png
+assets/**/*.jpg
+assets/**/*.xml
+!assets/**/README.md
+
+# 数据集（LeRobot 格式，体积大）
+data/
+outputs/
+reward_history/
+
+# 临时文件 / 视频流缓存
+/tmp/
+*.mp4
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# 系统文件
+.DS_Store
+Thumbs.db

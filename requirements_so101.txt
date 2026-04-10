@@ -1,0 +1,41 @@
+# ============================================================
+# SO101 仿真遥操作 / 数据采集 / 模型推理 依赖
+# 安装方式：
+#   conda create -n so101 python=3.10
+#   conda activate so101
+#   pip install -e .                          # 安装 orca-gym 本包
+#   pip install -r requirements_so101.txt
+# ============================================================
+
+# ── OrcaGym 核心依赖（pyproject.toml 中已声明，此处补充可选组）────────────
+websockets>=11.0
+av>=10.0.0
+opencv-python>=4.8.0
+matplotlib>=3.7.0
+
+# ── 键盘监听（数采/推理键盘控制）────────────────────────────────────────────
+pynput>=1.7.6
+
+# ── 主臂串口驱动（数采流程必须）──────────────────────────────────────────────
+pyserial>=3.5
+feetech-servo-sdk>=1.0.0
+
+# ── openpi-client（推理流程必须）─────────────────────────────────────────────
+# 从本仓库 openpi 子模块中安装，无需 JAX 等重型依赖
+# 安装命令：pip install -e openpi/packages/openpi-client
+# 此处不写入 pip 依赖（避免找不到路径报错），请手动执行上述命令
+
+# ── lerobot（数采流程使用其 dataset / motor 模块）────────────────────────────
+# lerobot 仅以源码形式导入（sys.path），不做整体 pip install
+# 仅需安装以下 lerobot 的轻量依赖：
+huggingface-hub>=0.23.0
+datasets>=2.19.0
+safetensors>=0.4.3
+Pillow>=9.0.0
+tqdm>=4.64.0
+jsonlines>=3.1.0
+
+# ── 其他工具 ───────────────────────────────────────────────────────────────
+colorama>=2.4.0
+scipy>=1.11.0
+numpy==2.2.6
