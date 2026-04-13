@@ -31,5 +31,15 @@ uv run scripts/serve_policy.py policy:checkpoint \
 
 ## 获取模型权重
 
-- 通过训练流程自行训练（参考 `openpi_patches/README.md` 中的训练配置说明）
-- 或联系项目维护者获取预训练权重
+预训练权重（checkpoint）已上传百度云：
+
+> 链接：https://pan.baidu.com/s/1nLnQ09DF1zXdJiTif3TFqA  
+> 提取码：`gq9y`
+
+下载后将 checkpoint 目录（如 `5000/`、`6000/`）放入本目录：
+
+```
+models/h11_lora/
+├── 5000/
+└── 6000/
+```

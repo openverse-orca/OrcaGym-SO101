@@ -19,15 +19,18 @@ OrcaSim 安装目录/
 
 替换后在 OrcaStudio 中打开 `Levels/lerobotscene` 场景，点击"运行"即可。
 
-### Assets（需单独获取，约 2.5GB）
+### Assets（需单独下载，约 2.5GB）
 
-`Assets/` 体积过大（2.5GB），未包含在仓库中，请联系项目维护者获取。
+`Assets/` 体积过大（2.5GB），未包含在仓库中，请从百度云下载：
 
-获取后将 `Assets/` 直接**覆盖替换** OrcaSim 安装目录下的 `Assets/`：
+> 链接：https://pan.baidu.com/s/1nLnQ09DF1zXdJiTif3TFqA  
+> 提取码：`gq9y`
+
+下载后将 `Assets/` 直接**覆盖替换** OrcaSim 安装目录下的 `Assets/`：
 
 ```
 OrcaSim 安装目录/
-└── Assets/    ←  用获取到的 Assets/ 覆盖替换
+└── Assets/    ←  用下载的 Assets/ 覆盖替换
 ```
 
 ---
