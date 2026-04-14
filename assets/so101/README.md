@@ -41,11 +41,22 @@ OrcaSim 安装目录/
 
 ```
 assets/so101/
-├── so101_new_calib.xml     ← SO101 机械臂模型文件
-└── assets/                 ← 网格 STL 文件目录
+├── so101_new_calib.xml              ← SO101 机械臂 XML 模型文件
+├── so101_new_calib_usda.prefab      ← OrcaStudio Prefab（含相机配置，见下方说明）
+└── assets/                          ← 网格 STL 文件目录
     ├── base_so101_v2.stl
     ├── upper_arm_so101_v1.stl
     └── ...
+```
+
+### ⚠️ 关于 so101_new_calib_usda.prefab（相机缺失修复）
+
+百度云下载的 `Assets/` 中，`so101_new_calib_usda.prefab` 存在**相机配置缺失**问题，会导致相机画面无法正常推流。
+
+**修复方法**：将仓库 `assets/so101/so101_new_calib_usda.prefab` 替换到 OrcaSim 安装目录对应位置：
+
+```
+OrcaSim 安装目录/Assets/Prefabs/so101_new_calib_usda.prefab  ←  替换为此文件
 ```
 
 ---
