@@ -17,7 +17,7 @@ OrcaSim 安装目录/
 └── Levels/    ←  用仓库根目录的 Levels/ 覆盖替换
 ```
 
-替换后在 OrcaStudio 中打开 `Levels/lerobotscene` 场景，点击"运行"即可。
+替换后在 OrcaStudio 中打开 `Levels/manidp2d` 场景，点击"运行"即可。
 
 ### Assets（需单独下载，约 2.5GB）
 
